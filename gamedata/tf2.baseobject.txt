@@ -151,7 +151,7 @@
 				// first call in "CObjectDispenser::ResetHealingTargets()", second call in "CObjectDispenser::DispenseThink()" that include "DispenseContext"
 				"library"	"server"
 				"linux"		"@_ZN16CObjectDispenser11StopHealingEP11CBaseEntity"
-				"windows"	"\x55\x8B\xEC\x53\x8B\x5D\x08\x57\x53\x8B\xF9\xE8\x2A\x2A\x2A\x2A\x84\xC0"
+				"windows"	"\x55\x8B\xEC\x51\x53\x8B\x5D\x08\x56\x57\x8B\xF9\x85\xDB\x74\x2A"
 			}
 			"CTFPlayerShared::CalculateObjectCost()"
 			{
@@ -186,14 +186,14 @@
 				// It calls "IsUsingReverseBuild()" and return -1.0 at first. Use function calls to find this.
 				"library" "server"
 				"linux"   "@_ZN11CBaseObject25GetConstructionMultiplierEv"
-				"windows" "\x55\x8B\xEC\x83\xEC\x0C\x53\x8B\xD9\x89\x5D\xF8"
+				"windows" "\x55\x8B\xEC\x83\xEC\x0C\x56\x8B\xF1\x89\x75\xF4\xE8\x2A\x2A\x2A\x2A\x85\xC0"
 			}
 			"CObjectDispenser::CouldHealTarget"
 			{
 				// fourteen call in "CObjectDispenser::DispenseThink()"
 				"library"	"server"
 				"linux"		"@_ZN16CObjectDispenser15CouldHealTargetEP11CBaseEntity"
-				"windows"	"\x55\x8B\xEC\x56\x8B\x75\x08\x57\x8B\xF9\x8B\x87\x38\x01\x00\x00"
+				"windows"	"\x55\x8B\xEC\x53\x56\x8B\x75\x08\x57\x8B\xF9\x8B\x87\x38\x01\x00\x00"
 			}
 			"CTFPlayer::RemoveAllObjects()"
 			{
